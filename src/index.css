@@ -193,3 +193,29 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brand-green-light);
 }
+
+/* ===== FOOD GALLERY MARQUEE ===== */
+.gallery-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: marquee 16s linear infinite;
+  width: max-content;
+  align-items: center;
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+.gallery-item {
+  height: 240px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}

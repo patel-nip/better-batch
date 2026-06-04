@@ -118,9 +118,12 @@ export default function BuildYourBox() {
           )}
         </div>
 
-        {/* Right: Lifestyle photo */}
+        {/* Right: Lifestyle photo (cropped from Group 178.png right half) */}
         <div style={{
-          background: 'url(/images/byob-lifestyle.png) center/cover no-repeat',
+          backgroundImage: 'url("/images/Group 178.png")',
+          backgroundPosition: 'right center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
           position: 'relative',
           minHeight: '400px',
         }}>

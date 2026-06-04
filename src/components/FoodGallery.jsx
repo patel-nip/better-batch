@@ -9,33 +9,17 @@ export default function FoodGallery() {
       padding: '3rem 0',
       overflow: 'hidden',
     }}>
-      <div style={{
-        display: 'flex',
-        gap: '1rem',
-        animation: 'marquee 30s linear infinite',
-        width: 'max-content',
-      }}>
+      <div className="gallery-track">
         {allImages.map((img, idx) => (
-          <div
-            key={idx}
-            style={{
-              width: '200px',
-              height: '200px',
-              borderRadius: 'var(--border-radius-xl)',
-              overflow: 'hidden',
-              flexShrink: 0,
-              transition: 'transform 0.3s ease',
-            }}
-            onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
-            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-          >
+          <div key={idx} className="gallery-item">
             <img
               src={img}
               alt="Delicious snack photography"
               style={{
-                width: '100%',
                 height: '100%',
-                objectFit: 'cover',
+                width: 'auto',
+                display: 'block',
+                mixBlendMode: 'multiply', // Blends the white borders with the cream background
               }}
             />
           </div>

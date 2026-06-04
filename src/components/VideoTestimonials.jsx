@@ -10,7 +10,7 @@ export default function VideoTestimonials() {
   const getIndex = (offset) => (current + offset + testimonials.length) % testimonials.length;
 
   return (
-    <section id="testimonials" className="section" style={{ background: 'var(--brand-cream)', overflow: 'hidden' }}>
+    <section id="testimonials" className="section" style={{ background: 'var(--brand-cream)', overflow: 'hidden', position: 'relative' }}>
       <div className="container">
         <h2 className="section-title" style={{ color: 'var(--text-dark)' }}>
           <span style={{ color: 'var(--brand-orange)' }}>Video</span>
@@ -67,6 +67,7 @@ export default function VideoTestimonials() {
               const idx = getIndex(offset);
               const t = testimonials[idx];
               const isCenter = offset === 0;
+              const hasBakedInText = t.image.includes('Rectangle 42');
 
               return (
                 <div
@@ -120,8 +121,8 @@ export default function VideoTestimonials() {
                     </div>
                   </div>
 
-                  {/* Caption */}
-                  {isCenter && (
+                  {/* Caption (only rendered if not baked into the image) */}
+                  {isCenter && !hasBakedInText && (
                     <div style={{
                       position: 'absolute',
                       bottom: 0,
@@ -175,18 +176,29 @@ export default function VideoTestimonials() {
           </button>
         </div>
 
-        {/* Floating makhana */}
-        <div className="float-3" style={{
-          position: 'absolute',
-          top: '5%',
-          right: '5%',
-          width: '60px',
-          height: '60px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle at 30% 30%, #E8D5A0, #C4A55A)',
-          boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-        }} />
+        {/* Floating makhana from brand assets */}
+        <img
+          src="/images/makhanas 2.png"
+          alt="floating makhana"
+          className="float-2"
+          style={{
+            position: 'absolute',
+            top: '5%',
+            right: '5%',
+            width: '80px',
+            height: 'auto',
+            pointerEvents: 'none',
+            filter: 'drop-shadow(0 8px 15px rgba(0,0,0,0.1))',
+          }}
+        />
       </div>
+
+      <style>{`
+        @media (max-width: 900px) {
+          #testimonials button { position: static; margin: 0 0.5rem; }
+          #testimonials .container > div { flex-wrap: wrap; gap: 1rem; }
+        }
+      `}</style>
     </section>
   );
 }

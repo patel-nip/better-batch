@@ -64,16 +64,20 @@ export default function WhyChooseUs() {
                   {idx === 0 ? '🌱' : idx === 1 ? '✨' : '🏭'}
                 </div>
                 {/* Floating makhana */}
-                <div className={`float-${idx + 1}`} style={{
-                  position: 'absolute',
-                  top: '20%',
-                  right: '20%',
-                  width: '25px',
-                  height: '25px',
-                  borderRadius: '50%',
-                  background: 'radial-gradient(circle at 30% 30%, #E8D5A0, #C4A55A)',
-                  opacity: 0.4,
-                }} />
+                <img
+                  src="/images/makhanas 2.png"
+                  alt="floating makhana"
+                  className={`float-${idx + 1}`}
+                  style={{
+                    position: 'absolute',
+                    top: '20%',
+                    right: '20%',
+                    width: '40px',
+                    height: 'auto',
+                    opacity: 0.45,
+                    pointerEvents: 'none',
+                  }}
+                />
               </div>
 
               {/* Content */}
@@ -107,16 +111,21 @@ export default function WhyChooseUs() {
       </div>
 
       {/* Floating makhana */}
-      <div className="float-4" style={{
-        position: 'absolute',
-        top: '10%',
-        right: '3%',
-        width: '45px',
-        height: '45px',
-        borderRadius: '50%',
-        background: 'radial-gradient(circle at 30% 30%, #E8D5A0, #C4A55A)',
-        opacity: 0.5,
-      }} />
+      <img
+        src="/images/makhanas.png"
+        alt="floating makhana"
+        className="float-4"
+        style={{
+          position: 'absolute',
+          top: '10%',
+          right: '3%',
+          width: '50px',
+          height: 'auto',
+          opacity: 0.6,
+          pointerEvents: 'none',
+          filter: 'drop-shadow(0 8px 15px rgba(0,0,0,0.1))',
+        }}
+      />
     </section>
   );
 }
