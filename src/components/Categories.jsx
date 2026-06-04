@@ -19,18 +19,23 @@ export default function Categories() {
             <div
               key={cat.id}
               style={{
-                borderRadius: 'var(--border-radius-xl)',
-                overflow: 'hidden',
                 cursor: 'pointer',
                 transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                backgroundColor: 'transparent',
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = 'scale(1.05) translateY(-5px)';
-                e.currentTarget.style.boxShadow = `0 15px 40px ${cat.color}40`;
+                const img = e.currentTarget.querySelector('img');
+                if (img) {
+                  img.style.filter = `drop-shadow(0 15px 30px ${cat.color}60)`;
+                }
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.transform = 'scale(1) translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
+                const img = e.currentTarget.querySelector('img');
+                if (img) {
+                  img.style.filter = 'drop-shadow(0 4px 10px rgba(0,0,0,0.06))';
+                }
               }}
             >
               <img
@@ -40,6 +45,9 @@ export default function Categories() {
                   width: '100%',
                   height: 'auto',
                   display: 'block',
+                  filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.06))',
+                  transition: 'filter 0.3s ease',
+                  backgroundColor: 'transparent',
                 }}
               />
             </div>
