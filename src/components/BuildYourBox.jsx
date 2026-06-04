@@ -6,20 +6,6 @@ export default function BuildYourBox() {
 
   return (
     <section id="byob" style={{ position: 'relative', overflow: 'hidden' }}>
-      {/* Wave divider */}
-      <div style={{
-        position: 'absolute',
-        top: '-2px',
-        left: 0,
-        right: 0,
-        height: '80px',
-        zIndex: 2,
-      }}>
-        <svg viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none" style={{ width: '100%', height: '100%' }}>
-          <path d="M0,0 L1440,0 L1440,20 Q1200,80 720,40 Q240,0 0,60 Z" fill="var(--brand-cream)" />
-        </svg>
-      </div>
-
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -27,31 +13,22 @@ export default function BuildYourBox() {
       }} className="byob-grid">
         {/* Left: Configurator */}
         <div style={{
-          background: 'var(--brand-cream-dark)',
-          padding: '6rem 4rem 4rem',
+          background: '#F9E8A2', // soft yellow background from user screenshot
+          padding: '7rem 4rem 4rem',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
+          position: 'relative',
         }}>
+
           <h2 style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+            fontSize: 'clamp(2.5rem, 5vw, 4.2rem)',
             fontWeight: 700,
-            color: 'var(--sage-green)',
+            color: 'var(--brand-green)',
             lineHeight: 1.1,
             marginBottom: '2.5rem',
-            position: 'relative',
           }}>
-            <span style={{
-              position: 'absolute',
-              top: '-10px',
-              left: '-15px',
-              width: '110%',
-              height: '110%',
-              background: 'rgba(125, 139, 110, 0.12)',
-              borderRadius: '8px',
-              zIndex: -1,
-            }} />
             Build Your<br />Own Box
           </h2>
 
@@ -74,11 +51,11 @@ export default function BuildYourBox() {
                   style={{
                     padding: '0.9rem 1.5rem',
                     borderRadius: 'var(--border-radius-pill)',
-                    border: `2px solid ${isRed ? 'var(--brand-red-light)' : 'var(--brand-green)'}`,
+                    border: `2px solid ${isRed ? 'var(--brand-orange)' : 'var(--brand-green)'}`,
                     background: (isFilled || isSelected)
-                      ? (isRed ? 'var(--brand-red-light)' : 'var(--brand-green)')
+                      ? (isRed ? 'var(--brand-orange)' : 'var(--brand-green)')
                       : 'transparent',
-                    color: (isFilled || isSelected) ? 'white' : (isRed ? 'var(--brand-red-light)' : 'var(--brand-green)'),
+                    color: (isFilled || isSelected) ? 'white' : (isRed ? 'var(--brand-orange)' : 'var(--brand-green)'),
                     fontFamily: 'var(--font-heading)',
                     fontWeight: 700,
                     fontSize: '1.1rem',
@@ -116,10 +93,10 @@ export default function BuildYourBox() {
           )}
         </div>
 
-        {/* Right: Lifestyle photo (cropped from Group 178.png right half) */}
+        {/* Right: Lifestyle photo */}
         <div style={{
-          backgroundImage: 'url("/images/Group 178.png")',
-          backgroundPosition: 'right center',
+          backgroundImage: 'url("/images/Screenshot_20260604_234350_My Files(1)(1).jpg.jpeg")',
+          backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           position: 'relative',
@@ -137,6 +114,21 @@ export default function BuildYourBox() {
             boxShadow: '0 4px 15px rgba(0,0,0,0.15)',
           }} />
         </div>
+      </div>
+
+      {/* Wavy cut at the top of the entire section (covers both left and right panels) */}
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '90px',
+        zIndex: 10,
+        pointerEvents: 'none',
+      }}>
+        <svg viewBox="0 0 1000 100" fill="none" preserveAspectRatio="none" style={{ width: '100%', height: '100%' }}>
+          <path d="M0,0 L1000,0 L1000,40 C850,90 650,-10 500,40 C350,90 150,-10 0,40 Z" fill="var(--brand-cream)" />
+        </svg>
       </div>
 
       <style>{`

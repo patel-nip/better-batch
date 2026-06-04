@@ -38,7 +38,7 @@ export const categories = [
 
 export const packSizes = [
   { id: 'pack-3', label: 'Pack of 3', count: 3, style: 'filled' },
-  { id: 'pack-6', label: 'Pack of 6', count: 6, style: 'outline' },
+  { id: 'pack-6', label: 'Pack of 6', count: 6, style: 'outline-red' },
   { id: 'pack-15', label: 'Pack of 15', count: 15, style: 'outline-red' },
   { id: 'pack-30', label: 'Pack of 30', count: 30, style: 'outline' },
 ];
