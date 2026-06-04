@@ -109,13 +109,12 @@ export default function KnowYourSnack() {
             marginBottom: '1rem',
           }}>
             <div />
-            {fatColors.map((color, i) => (
+             {fatColors.map((color, i) => (
               <div key={i} style={{
                 background: color,
                 color: 'white',
                 fontFamily: 'var(--font-heading)',
-                fontWeight: 900,
-                fontStyle: 'italic',
+                fontWeight: 700,
                 fontSize: '1.1rem',
                 padding: '0.6rem 1rem',
                 borderRadius: 'var(--border-radius-pill)',
@@ -140,7 +139,6 @@ export default function KnowYourSnack() {
                 color: 'white',
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 700,
-                fontStyle: 'italic',
                 fontSize: '1rem',
                 padding: '1rem 1.2rem',
                 borderRadius: 'var(--border-radius-pill)',

@@ -36,7 +36,6 @@ export default function OurStory() {
             fontSize: 'clamp(1rem, 2vw, 1.2rem)',
             fontWeight: 500,
             color: 'var(--text-medium)',
-            fontStyle: 'italic',
           }}>
             Because life's full of small choices, and every bite is one of them.
           </p>

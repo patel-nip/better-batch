@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
               }}>
                 <h3 style={{
                   fontFamily: 'var(--font-heading)',
-                  fontWeight: 900,
+                  fontWeight: 700,
                   fontSize: '1.3rem',
                   color: 'var(--text-dark)',
                   marginBottom: '0.8rem',

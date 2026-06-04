@@ -39,7 +39,7 @@ export default function Header() {
           <h1 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: scrolled ? '1.5rem' : '1.8rem',
-            fontWeight: 900,
+            fontWeight: 700,
             color: 'var(--brand-green)',
             lineHeight: 1.1,
             transition: 'font-size 0.3s',

@@ -47,7 +47,7 @@ export default function CartDrawer() {
         }}>
           <h3 style={{
             fontFamily: 'var(--font-heading)',
-            fontWeight: 900,
+            fontWeight: 700,
             fontSize: '1.5rem',
             color: 'var(--text-dark)',
           }}>

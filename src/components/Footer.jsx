@@ -20,7 +20,7 @@ export default function Footer() {
         <div>
           <h4 style={{
             fontFamily: 'var(--font-heading)',
-            fontWeight: 900,
+            fontWeight: 700,
             fontSize: '1.3rem',
             color: 'white',
             marginBottom: '1.5rem',
@@ -52,7 +52,7 @@ export default function Footer() {
         <div>
           <h4 style={{
             fontFamily: 'var(--font-heading)',
-            fontWeight: 900,
+            fontWeight: 700,
             fontSize: '1.3rem',
             color: 'white',
             marginBottom: '1.5rem',
@@ -165,7 +165,7 @@ export default function Footer() {
             <span style={{
               fontFamily: 'var(--font-heading)',
               fontSize: '3rem',
-              fontWeight: 900,
+              fontWeight: 700,
               color: 'rgba(255,255,255,0.15)',
               lineHeight: 1,
             }}>

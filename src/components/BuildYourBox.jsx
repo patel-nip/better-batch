@@ -36,8 +36,7 @@ export default function BuildYourBox() {
           <h2 style={{
             fontFamily: 'var(--font-heading)',
             fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-            fontWeight: 900,
-            fontStyle: 'italic',
+            fontWeight: 700,
             color: 'var(--sage-green)',
             lineHeight: 1.1,
             marginBottom: '2.5rem',
@@ -82,7 +81,6 @@ export default function BuildYourBox() {
                     color: (isFilled || isSelected) ? 'white' : (isRed ? 'var(--brand-red-light)' : 'var(--brand-green)'),
                     fontFamily: 'var(--font-heading)',
                     fontWeight: 700,
-                    fontStyle: 'italic',
                     fontSize: '1.1rem',
                     cursor: 'pointer',
                     transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
