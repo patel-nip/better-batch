@@ -35,6 +35,9 @@ export default function WhyChooseUs() {
                 overflow: 'hidden',
                 transition: 'all 0.3s ease',
                 cursor: 'default',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = 'translateY(-8px)';
@@ -54,6 +57,7 @@ export default function WhyChooseUs() {
                 justifyContent: 'center',
                 position: 'relative',
                 overflow: 'hidden',
+                flexShrink: 0,
               }}>
                 {/* Subtle icon/pattern */}
                 <div style={{
@@ -84,6 +88,9 @@ export default function WhyChooseUs() {
               <div style={{
                 background: 'white',
                 padding: '1.8rem',
+                flexGrow: 1,
+                display: 'flex',
+                flexDirection: 'column',
               }}>
                 <h3 style={{
                   fontFamily: 'var(--font-heading)',
