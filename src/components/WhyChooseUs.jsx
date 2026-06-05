@@ -1,4 +1,6 @@
 import { whyChooseUs } from '../data/products';
+import { getImageUrl } from '../utils/imageUrl';
+
 
 export default function WhyChooseUs() {
   return (
@@ -69,7 +71,7 @@ export default function WhyChooseUs() {
                 </div>
                 {/* Floating makhana */}
                 <img
-                  src="/images/makhanas 2.png"
+                  src={getImageUrl("/images/makhanas 2.png")}
                   alt="floating makhana"
                   className={`float-${idx + 1}`}
                   style={{
@@ -119,7 +121,7 @@ export default function WhyChooseUs() {
 
       {/* Floating makhana */}
       <img
-        src="/images/makhanas.png"
+        src={getImageUrl("/images/makhanas.png")}
         alt="floating makhana"
         className="float-4"
         style={{

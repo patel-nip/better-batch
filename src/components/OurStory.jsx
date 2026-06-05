@@ -1,10 +1,12 @@
+import { getImageUrl } from '../utils/imageUrl';
+
 export default function OurStory() {
   return (
     <section id="our-story" style={{ position: 'relative' }}>
       {/* Red banner image from brand assets */}
       <div style={{ width: '100%', overflow: 'hidden' }}>
         <img
-          src="/images/Group 184.png"
+          src={getImageUrl("/images/Group 184.png")}
           alt="Our Story"
           style={{
             width: '100%',

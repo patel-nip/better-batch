@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { packSizes } from '../data/products';
+import { getImageUrl } from '../utils/imageUrl';
+
 
 export default function BuildYourBox() {
   const [selectedPack, setSelectedPack] = useState(null);
@@ -95,7 +97,7 @@ export default function BuildYourBox() {
 
         {/* Right: Lifestyle photo */}
         <div style={{
-          backgroundImage: 'url("/images/Screenshot_20260604_234350_My Files(1)(1).jpg.jpeg")',
+          backgroundImage: `url(${getImageUrl('/images/Screenshot_20260604_234350_My Files(1)(1).jpg.jpeg')})`,
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',

@@ -1,5 +1,4 @@
 import { CartProvider } from './context/CartContext';
-import Header from './components/Header';
 import HeroCarousel from './components/HeroCarousel';
 import Categories from './components/Categories';
 import BuildYourBox from './components/BuildYourBox';
@@ -11,14 +10,12 @@ import Partnerships from './components/Partnerships';
 import QuickRecipes from './components/QuickRecipes';
 import OurStory from './components/OurStory';
 import WhyChooseUs from './components/WhyChooseUs';
-import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
 
 export default function App() {
   return (
     <CartProvider>
       <div style={{ position: 'relative', overflow: 'hidden' }}>
-        <Header />
         <main>
           <HeroCarousel />
           <Categories />
@@ -32,7 +29,6 @@ export default function App() {
           <OurStory />
           <WhyChooseUs />
         </main>
-        <Footer />
         <CartDrawer />
       </div>
     </CartProvider>

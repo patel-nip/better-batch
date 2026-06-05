@@ -1,4 +1,6 @@
 import { recipes } from '../data/products';
+import { getImageUrl } from '../utils/imageUrl';
+
 
 export default function QuickRecipes() {
   return (
@@ -56,7 +58,7 @@ export default function QuickRecipes() {
 
       {/* Floating makhana asset */}
       <img
-        src="/images/makhanas.png"
+        src={getImageUrl("/images/makhanas.png")}
         alt="floating makhana"
         className="float-3"
         style={{

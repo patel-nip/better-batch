@@ -1,3 +1,5 @@
+import { getImageUrl } from '../utils/imageUrl';
+
 export const navLinks = [
   { label: 'Home', href: '#' },
   { label: 'Better Batch', href: '#categories' },
@@ -14,25 +16,25 @@ export const categories = [
     id: 'amrutam',
     name: 'Amrutam',
     color: '#B85C38',
-    image: '/images/Group 179.png',
+    image: getImageUrl('/images/Group 179.png'),
   },
   {
     id: 'better-batch',
     name: 'Better Batch',
     color: '#4A7C3F',
-    image: '/images/Group 180.png',
+    image: getImageUrl('/images/Group 180.png'),
   },
   {
     id: 'chhakhana',
     name: 'Chhakhana',
     color: '#3F3D89',
-    image: '/images/Group 181.png',
+    image: getImageUrl('/images/Group 181.png'),
   },
   {
     id: 'byob',
     name: 'BYOB',
     color: '#F0A500',
-    image: '/images/Group 182.png',
+    image: getImageUrl('/images/Group 182.png'),
   },
 ];
 
@@ -63,9 +65,9 @@ export const bestsellers = [
     brand: 'CHAKHAANA',
     weight: '48g',
     price: 20,
-    image: '/images/Group 175.png',
-    cardImage: '/images/Screenshot_20260604_211533_Gallery(1).png',
-    packetImage: '/images/1780585947550.png',
+    image: getImageUrl('/images/Group 175.png'),
+    cardImage: getImageUrl('/images/Screenshot_20260604_211533_Gallery(1).png'),
+    packetImage: getImageUrl('/images/1780585947550.png'),
     color: '#C62828',
     badgeColor: '#F9A825',
   },
@@ -75,9 +77,9 @@ export const bestsellers = [
     brand: 'CHAKHAANA',
     weight: '48g',
     price: 20,
-    image: '/images/Group 176.png',
-    cardImage: '/images/Screenshot_20260604_211538_Gallery(1).png',
-    packetImage: '/images/1780586127003.png',
+    image: getImageUrl('/images/Group 176.png'),
+    cardImage: getImageUrl('/images/Screenshot_20260604_211538_Gallery(1).png'),
+    packetImage: getImageUrl('/images/1780586127003.png'),
     color: '#388E3C',
     badgeColor: '#4CAF50',
   },
@@ -87,9 +89,9 @@ export const bestsellers = [
     brand: 'CHAKHAANA',
     weight: '48g',
     price: 20,
-    image: '/images/Group 177.png',
-    cardImage: '/images/Screenshot_20260604_211536_Gallery(1).png',
-    packetImage: '/images/1780586227460.png',
+    image: getImageUrl('/images/Group 177.png'),
+    cardImage: getImageUrl('/images/Screenshot_20260604_211536_Gallery(1).png'),
+    packetImage: getImageUrl('/images/1780586227460.png'),
     color: '#008080',
     badgeColor: '#00BCD4',
   },
@@ -99,30 +101,30 @@ export const testimonials = [
   {
     id: 1,
     name: 'Priya S.',
-    image: '/images/Rectangle 42.jpg',
+    image: getImageUrl('/images/Rectangle 42.jpg'),
     caption: 'These makhana are absolutely addictive!',
   },
   {
     id: 2,
     name: 'Ananya R.',
-    image: '/images/Rectangle 44.jpg',
+    image: getImageUrl('/images/Rectangle 44.jpg'),
     caption: 'and some of them that is kind of an ongoing obsession',
   },
   {
     id: 3,
     name: 'Meera K.',
-    image: '/images/Rectangle 58.jpg',
+    image: getImageUrl('/images/Rectangle 58.jpg'),
     caption: 'Finally a snack I don\'t feel guilty about!',
   },
 ];
 
 export const foodGalleryImages = [
-  '/images/Rectangle 103.jpg',
-  '/images/Rectangle 104.jpg',
-  '/images/Rectangle 105.jpg',
-  '/images/Rectangle 106.jpg',
-  '/images/Rectangle 107.jpg',
-  '/images/Rectangle 108.jpg',
+  getImageUrl('/images/Rectangle 103.jpg'),
+  getImageUrl('/images/Rectangle 104.jpg'),
+  getImageUrl('/images/Rectangle 105.jpg'),
+  getImageUrl('/images/Rectangle 106.jpg'),
+  getImageUrl('/images/Rectangle 107.jpg'),
+  getImageUrl('/images/Rectangle 108.jpg'),
 ];
 
 export const partnerLogos = [
@@ -134,25 +136,25 @@ export const recipes = [
   {
     id: 1,
     title: 'Introducing... THE SOUPLET',
-    image: '/images/Rectangle 54.jpg',
+    image: getImageUrl('/images/Rectangle 54.jpg'),
     type: 'featured',
   },
   {
     id: 2,
     title: 'Quick Makhana Chaat',
-    image: '/images/Rectangle 55.jpg',
+    image: getImageUrl('/images/Rectangle 55.jpg'),
     type: 'recipe',
   },
   {
     id: 3,
     title: 'Spiced Trail Mix Bowl',
-    image: '/images/Rectangle 56.jpg',
+    image: getImageUrl('/images/Rectangle 56.jpg'),
     type: 'recipe',
   },
   {
     id: 4,
     title: 'Makhana Butter Masala',
-    image: '/images/Rectangle 57.jpg',
+    image: getImageUrl('/images/Rectangle 57.jpg'),
     type: 'recipe',
   },
 ];

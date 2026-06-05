@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { testimonials } from '../data/products';
+import { getImageUrl } from '../utils/imageUrl';
+
 
 export default function VideoTestimonials() {
   const [current, setCurrent] = useState(0);
@@ -7,7 +9,7 @@ export default function VideoTestimonials() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const autoSlideRef = useRef(null);
-  const SLIDE_INTERVAL = 4000;
+  const SLIDE_INTERVAL = 3500;
 
   const totalSlides = testimonials.length;
 
@@ -293,7 +295,7 @@ export default function VideoTestimonials() {
 
         {/* Floating makhana from brand assets */}
         <img
-          src="/images/makhanas 2.png"
+          src={getImageUrl("/images/makhanas 2.png")}
           alt="floating makhana"
           className="float-2"
           style={{
